@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet/preweddingvid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Quicksand:wght@300..700&family=Rouge+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="preweddingvid.html">Pre Wedding Video</a>
+            <a href="OurStory.html">Our Story</a>
+            <a href="church.html">Church</a>
+            <a href="eventplace.html">Event Place</a>
+        </div>
+    </div>
+    <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <div class="invitation">
+
+        <div class="video">
+
+            <h1> Pre Wedding Video </h1>
+            <video width="100%" controls>
+                <source src="Jasper & Kristine.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+
+    </div>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+
+</html>

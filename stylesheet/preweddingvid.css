@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: beige;
+
+}
+
+/* main container */
+.invitation {
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    
+    width: 100%;
+}
+
+#menu {
+    font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    color: rgb(74, 120, 94);
+    padding: 20px;
+}
+
+.overlay {
+    grid-column-start: 1 span 2;
+    grid-row-start: 1;
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+#name {
+
+    font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    color: rgb(74, 120, 94);
+    padding: 20px;
+}
+
+.video>h1 {
+    text-align: center;
+    font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    color: rgb(74, 120, 94);
+    padding: 20px;
+}
+
+
+.video {
+    width: 60%;
+    padding: 20px 30px;
+}
+
+video{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #menu {
+        display: inline-block;
+        font-family: "Rouge Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 6rem;
+        color: rgb(74, 120, 94);
+        padding: 20px;
+    }
+
+    .overlay {
+
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    .invitation {
+        display: flex;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .wedimg {
+        width: 100%;
+    }
+
+    .video {
+
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .video>h1 {
+        text-align: center;
+        font-family: "Rouge Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+        color: rgb(74, 120, 94);
+        padding: 20px;
+    }
+
+
+
+}
